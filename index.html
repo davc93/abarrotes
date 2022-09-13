@@ -3,66 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
+    
     <title>Vite + TS</title>
   </head>
-  <body>
+  <body class="m-4" >
     <header class="hero">
-      <div class="hero--container">
+      <div class="hero--container flex flex-col h-screen gap-6">
         <p>Donde el Juan</p>
         <h1>Delivery de abarrotes a tu casa</h1>
-        <p>Encuentra todas las cosas que necesitas en tu casa, verdura,frutas, pan y mucho más, y lo mejor, lo llevamos a tu casa!</p>
+        <p class="">Encuentra todas las cosas que necesitas en tu casa, verdura,frutas, pan y mucho más, y lo mejor, lo llevamos a tu casa!</p>
+        <a href="#" class="btn--primary mt-4 ">Haz tu pedido</a>
       </div>
     </header>
     <main>
       <section class="features">
-        <div class="features--container">
-          <li>
+        <h2 class="mb-16">Lo mejor a tu mesa</h2>
+        <div class="features--container flex flex-wrap">
+          
             <div class="features__card">
-              <img src="" alt="">
+              <svg width="156" height="88" viewBox="0 0 156 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M38.9932 4.88904C38.9932 3.59238 39.5069 2.34884 40.4212 1.43197C41.3355 0.515094 42.5756 0 43.8686 0H58.4948C59.7878 0 61.0279 0.515094 61.9422 1.43197C62.8565 2.34884 63.3701 3.59238 63.3701 4.88904C63.3701 6.18569 62.8565 7.42923 61.9422 8.34611C61.0279 9.26298 59.7878 9.77807 58.4948 9.77807V14.6671H98.8629L102.627 3.3441C102.95 2.37097 103.57 1.52442 104.4 0.924271C105.229 0.324124 106.226 0.000778792 107.249 0H116.999C118.292 0 119.532 0.515094 120.447 1.43197C121.361 2.34884 121.875 3.59238 121.875 4.88904C121.875 6.18569 121.361 7.42923 120.447 8.34611C119.532 9.26298 118.292 9.77807 116.999 9.77807H110.759L107.726 18.9206L115.595 31.5343C122.376 28.7301 129.96 28.5826 136.844 31.1212C143.728 33.6598 149.41 38.6991 152.763 45.2405C156.117 51.7819 156.898 59.348 154.951 66.4394C153.004 73.5308 148.471 79.63 142.251 83.5283C136.032 87.4266 128.578 88.8394 121.369 87.4869C114.159 86.1344 107.719 82.1152 103.325 76.2258C98.9313 70.3364 96.904 63.0066 97.6451 55.689C98.3862 48.3714 101.842 41.6 107.327 36.7167L102.373 28.7769L82.1306 61.2596C81.6923 61.9628 81.0829 62.5426 80.3597 62.9446C79.6365 63.3466 78.8232 63.5575 77.9963 63.5575H58.095C57.0838 69.5533 54.2393 75.0859 49.9552 79.3897C45.6711 83.6934 40.1591 86.5557 34.1818 87.5805C28.2045 88.6052 22.0573 87.7418 16.5908 85.1097C11.1242 82.4776 6.60847 78.2069 3.66832 72.8884C0.728177 67.57 -0.491049 61.4667 0.179324 55.4229C0.849696 49.3791 3.37653 43.6937 7.41024 39.1531C11.4439 34.6125 16.7851 31.4413 22.6949 30.0781C28.6046 28.7149 34.7907 29.2272 40.3974 31.5441L48.744 18.1481V9.77807H43.8686C42.5756 9.77807 41.3355 9.26298 40.4212 8.34611C39.5069 7.42923 38.9932 6.18569 38.9932 4.88904ZM53.6194 28.7769L48.666 36.7362C53.5414 41.0777 56.9541 47.0423 58.095 53.7794H69.2011L53.6194 28.7769ZM77.9963 49.4477L93.578 24.4452H62.4146L77.9963 49.4477ZM48.1297 53.7794C47.3002 50.5623 45.6658 47.6108 43.3811 45.204L38.0377 53.7794H48.1297ZM35.1222 40.0119C31.4024 38.8339 27.4158 38.8016 23.6775 39.9193C19.9393 41.037 16.6212 43.2533 14.152 46.2817C11.6829 49.3101 10.1761 53.0114 9.82653 56.9075C9.47691 60.8036 10.3005 64.7152 12.1908 68.137C14.0812 71.5588 16.9514 74.3335 20.4306 76.1025C23.9098 77.8715 27.8381 78.5535 31.7079 78.0604C35.5776 77.5673 39.211 75.9217 42.1384 73.3363C45.0659 70.751 47.1528 67.3446 48.1297 63.5575H29.2425C28.3722 63.5575 27.5178 63.3239 26.7679 62.8809C26.0181 62.438 25.4001 61.8018 24.9783 61.0385C24.5564 60.2752 24.3459 59.4125 24.3688 58.5401C24.3916 57.6677 24.6469 56.8173 25.1082 56.0772L35.1222 40.0119ZM112.611 45.1942C109.343 48.6459 107.442 53.1745 107.265 57.931C107.088 62.6875 108.647 67.3455 111.65 71.0318C114.653 74.718 118.893 77.1796 123.577 77.955C128.26 78.7303 133.064 77.7663 137.089 75.2436C141.114 72.7209 144.084 68.8127 145.441 64.2516C146.798 59.6905 146.45 54.7895 144.461 50.4675C142.473 46.1455 138.981 42.6991 134.64 40.7742C130.298 38.8494 125.406 38.5784 120.88 40.0119L130.884 56.0772C131.224 56.6217 131.453 57.2278 131.559 57.861C131.664 58.4943 131.645 59.1422 131.501 59.7678C131.357 60.3934 131.091 60.9844 130.719 61.5071C130.348 62.0299 129.877 62.474 129.334 62.8143C128.791 63.1546 128.187 63.3843 127.555 63.4904C126.924 63.5964 126.278 63.5766 125.654 63.4323C125.03 63.2879 124.441 63.0217 123.919 62.6489C123.398 62.2762 122.955 61.8041 122.616 61.2596L112.611 45.204V45.1942Z" fill="#367E18"/>
+                </svg>
+                
               <h3>Delivery a tu casa</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione eius harum tempore. Error, molestias! Eaque sequi velit dolorum quos, atque labore neque saepe blanditiis id?</p>
             </div>
-          </li>
-          <li>
+          
+          
             <div class="features__card">
               <img src="" alt="">
               <h3>Frutas y verduras frescas</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione eius harum tempore. Error, molestias! Eaque sequi velit dolorum quos, atque labore neque saepe blanditiis id?</p>
             </div>
-          </li>
-          <li>
+          
+          
             <div class="features__card">
-              <img src="" alt="">
+              <svg width="71" height="118" viewBox="0 0 71 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 82.4399C1.2642 96.4903 12.9238 106.461 30.6738 107.751V118H39.583V107.751C58.973 106.242 71 95.6306 71 79.9366C71 66.5351 62.9109 58.7809 45.7502 54.4149L39.583 52.8387V20.7933C49.167 21.7204 55.6332 26.8113 57.2647 34.4139H69.8212C68.4033 20.9281 56.6667 11.2521 39.583 10.1817V0H30.6738V10.3924C14.1112 12.331 2.74194 22.7993 2.74194 36.993C2.74194 49.2481 10.9934 57.9211 25.4718 61.5791L30.6824 62.9446V96.9201C20.8678 95.4873 14.1112 90.1773 12.4797 82.4399H0V82.4399ZM28.9655 50.1079C20.0563 47.8911 15.2985 43.1543 15.2985 36.4873C15.2985 28.5307 21.312 22.656 30.6738 21.0799V50.5377L28.9655 50.1163V50.1079ZM42.5556 65.8861C53.549 68.6086 58.3751 73.1263 58.3751 80.7963C58.3751 90.0424 51.3195 96.2037 39.583 97.1393V65.1529L42.5556 65.8777V65.8861Z" fill="#367E18"/>
+                </svg>
               <h3>Los mejores precios</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione eius harum tempore. Error, molestias! Eaque sequi velit dolorum quos, atque labore neque saepe blanditiis id?</p>
             </div>
-          </li>
+          
         </div>
       </section>
       <section class="products">
         <div class="products--container">
-          <li>
+          
             <div class="product__card">
               <h3>Baguette estilo frances</h3>
               <p>Prueba nuestra deliciosa baguette casera, estilo frances.</p>
-              <a href="" class="btn--primary">Hacer pedido</a>
+              <a href="#" class="btn--primary">Hacer pedido</a>
             </div>
-          </li>
-          <li>
+          
+          
             <div class="product__card">
               <h3>Paltas de lo valledor</h3>
               <p>Paltas ecońomicas y de muy bien sabor</p>
-              <a href="" class="btn--primary">Hacer pedido</a>
+              <a href="#" class="btn--primary">Hacer pedido</a>
             </div>
-          </li>
-          <li>
+          
+          
             <div class="product__card">
               <h3>Empanadas</h3>
               <p>De rico pino y buen tamaño, la empandas mas vendida de este 18</p>
-              <a href="" class="btn--primary">Hacer pedido</a>
+              <a href="#" class="btn--primary">Hacer pedido</a>
             </div>
-          </li>
+          
         </div>
       </section>
 
@@ -70,15 +81,16 @@
         <div class="CTA--container">
           <h2>Lleva los productos que necesitas a tu casa</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sed dolor velit, et aliquid ut? Corporis impedit culpa recusandae dolorum voluptas.</p>
-          <a href="" class="btn--primary">Hacer Pedido</a>
+          <a href="#" class="btn--primary">Hacer Pedido</a>
         </div>
       </section>  
     </main>
     <footer>
       <div class="footer__contact-info">
-        <li><a href="">Teléfono</a></li>
-        <li><a href="">WhatsApp</a></li>
-        <li><a href="">Instagram</a></li>
+        <h3>Contactanos</h3>
+        <li><a href="#">Teléfono</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Instagram</a></li>
 
       </div>
       <div class="footer__about">
