@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Comienza a copiar desde aqui */
 :root{
     --primary:#CC3636;
     --secondary:#367E18;
@@ -99,6 +101,9 @@ li{
     @apply py-3 px-8 text-tertiary-50
 
 }
+.btn--icon{
+    @apply flex items-center text-lg font-semibold text-tertiary-900 gap-2
+}
 
 
 
@@ -122,8 +127,12 @@ li{
     @apply h-32
 }
 
+
+/* hasta aqui */
+
 .CTA{
-    @apply h-screen
+    height: 50vh;
+    @apply justify-center mb-28
 }
 .CTA--container{
     @apply flex flex-col gap-6 items-center text-center
@@ -133,7 +142,7 @@ li{
 }
 
 footer {
-     @apply flex flex-wrap gap-3;
+     @apply flex flex-wrap gap-12 md:flex-nowrap md:justify-around;
 }
 .footer__contact-info{
     @apply flex flex-col;
@@ -141,8 +150,9 @@ footer {
 .footer__contact-info h3{
     @apply mb-4;
 }
+
 .footer__about{
-    @apply flex flex-col gap-3
+    @apply flex flex-col gap-3 sm:w-1/2;
 }
 
 /* home page */
@@ -154,4 +164,9 @@ footer {
 .products{
     margin: 150px 0;
 
+}
+
+.hero--container{
+    height: 80vh;
+    @apply justify-center
 }
