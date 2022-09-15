@@ -1,0 +1,1 @@
+import{$ as t,D as a,M as r}from"./index.eeaa6f0c.js";var e;(e=t("header"))==null||e.insertAdjacentElement("afterbegin",a());var n;(n=t(".menu--desktop"))==null||n.insertAdjacentElement("afterend",r());
