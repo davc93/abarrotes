@@ -8,11 +8,11 @@ function c(element:string){
 const items = [
     {
         name:'Home',
-        url:'/'
+        url:'/abarrotes/'
     },
     {
-        name:'Contact',
-        url:'/contact'
+        name:'Contacto',
+        url:'/abarrotes/contact/'
     }
 ]
 

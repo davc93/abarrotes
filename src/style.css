@@ -104,6 +104,40 @@ li{
 .btn--icon{
     @apply flex items-center text-lg font-semibold text-tertiary-900 gap-2
 }
+/* Form elements */
+.input-text--simple input{
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #ffffff78;
+    padding: 8px 20px;
+    outline: none;
+}
+.input-text--simple input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+.input-text--simple label{
+    display: none;
+}
+
+
+.select--simple label {
+    display: none;
+  }
+  .select--simple select {
+    background-color: transparent;
+    padding: 0 1rem 0 0;
+    margin: 0;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 15px;
+  }
+  .select--simple select:focus {
+    border: 1px solid #5c2bb9;
+  }
+  
+/* fin forms elements */
 
 
 
@@ -169,4 +203,21 @@ footer {
 .hero--container{
     height: 80vh;
     @apply justify-center
+}
+
+.contact-us{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @apply items-center lg:items-start px-4 md:px-12 lg:px-28
+}
+/* contact */
+
+.contact-form{
+    @apply flex flex-col gap-3 my-10
+}
+.contact-form * {
+
+    @apply w-64 sm:w-80
 }

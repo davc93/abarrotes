@@ -20,19 +20,14 @@ export function DesktopMenu(){
     const route = [
 
         {
-            name: 'About me',
-            url:'/',
+            name: 'Home',
+            url:'/abarrotes/',
             routes: [
             ]
         },
         {
-            name: 'Projects',
-            url:'https://ghost-5z2p.onrender.com/',
-            routes: [
-            ]
-        },        {
-            name: 'Contact',
-            url:'/contact',
+            name: 'Contacto',
+            url:'/abarrotes/contact',
             routes: [
             ]
         }
